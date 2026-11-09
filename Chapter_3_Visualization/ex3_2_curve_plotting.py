@@ -36,4 +36,19 @@ def feys_function():
     plt.plot(x,y)
     plt.show()
 
-feys_function()
+
+def brachistochrome():
+    theta = np.linspace(0,2*np.pi,100)
+    a = 1
+    x = a*(theta-np.sin(theta))
+    y = a*(1-np.cos(theta))
+
+    plt.plot(x,y)
+    plt.ylim(3,0)
+    plt.grid()
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.title("Brachistochrone")
+    plt.show()
+
+brachistochrome()
